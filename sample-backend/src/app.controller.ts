@@ -17,8 +17,8 @@ export class AppController {
   }
 
   @Get('analytics')
-  getAnalytics() {
-    return this.appService.getAnalytics();
+  getUsers() {
+    return this.appService.getUsers();
   }
 
  
