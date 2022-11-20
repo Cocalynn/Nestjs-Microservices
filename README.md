@@ -35,7 +35,7 @@ Add the current IP address in ```MongoDB Atlas > SECURITY > Network Access```.
 
  Terminal | Window1| Window2 | Window3
 ------------- | ------------- | ------------- | -------------
-Step1 | cd sample-backend  | cd sample-communication  | sample-analytics
+Step1 | cd sample-backend  | cd sample-communication  | cd sample-analytics
 Step2 | npm i  | npm i  | npm i
 Step3 | npm run start:dev  | npm run start:dev  | npm run start:dev
 
