@@ -20,4 +20,6 @@ export class AppController {
   getAnalytics() {
     return this.appService.getAnalytics();
   }
+
+ 
 }

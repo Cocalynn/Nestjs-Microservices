@@ -12,7 +12,7 @@ export class AppService {
   handleUserCreated(data: CreateUserEvent) {
     console.log('handlerUserCreated - ANALYTICS', data);
     this.analytics.push({
-      email: data.email,
+      liquidName: data.liquidName,
       timestamp: new Date(),
     });
   }

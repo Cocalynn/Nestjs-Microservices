@@ -20,15 +20,16 @@ export class AppService {
     this.users.push(createUserRequest);
     this.communicationClient.emit(
       'user_created',
-      new CreateUserEvent(createUserRequest.email),
+      new CreateUserEvent(createUserRequest.liquidName),
     );
     this.analyticsClient.emit(
       'user_created',
-      new CreateUserEvent(createUserRequest.email),
+      new CreateUserEvent(createUserRequest.liquidName),
     );
   }
 
   getAnalytics() {
     return this.analyticsClient.send({ cmd: 'get_analytics' }, {});
   }
+
 }
