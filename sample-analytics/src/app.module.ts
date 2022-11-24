@@ -6,7 +6,7 @@ import { UserSchema } from './user.models';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://<username>:<password>@cluster1.1arszpz.mongodb.net/?retryWrites=true&w=majority'),
+    MongooseModule.forRoot('mongodb+srv://lynn:E95XNVpFHs1xegJO@cluster1.1arszpz.mongodb.net/?retryWrites=true&w=majority'),
     MongooseModule.forFeature([{ name: 'user', schema: UserSchema}])
   ],
   controllers: [AppController],

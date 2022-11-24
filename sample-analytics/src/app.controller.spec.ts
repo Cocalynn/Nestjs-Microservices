@@ -14,5 +14,10 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
- 
+  describe('root', () => {
+    it('should return "Hello World from analytics!"', () => {
+      expect(appController.getHello()).toBe('Hello World from analytics!');
+    });
+  });
 });
+

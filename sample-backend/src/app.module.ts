@@ -3,6 +3,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
+
 @Module({
   imports: [
     ClientsModule.register([
@@ -20,4 +21,6 @@ import { AppService } from './app.service';
   controllers: [AppController],
   providers: [AppService],
 })
+
+
 export class AppModule {}

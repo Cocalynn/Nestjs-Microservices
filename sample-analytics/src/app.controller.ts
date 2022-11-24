@@ -8,13 +8,18 @@ import { User } from './user.models';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get()
+  getHello(): string {
+    return this.appService.getHello();}
+
   @EventPattern('user_created')
   handleUserCreated(@Body() userDto: User) {
     this.appService.handleUserCreated(userDto);
   }
 
   @MessagePattern({ cmd: 'get_analytics' })
-  getUsers() {
+  async getUsers() {
+    console.log('received the data requirements from sample-backend')
     this.appService.getUsers();
   }
 }
